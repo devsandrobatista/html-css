@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .quadro {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        div .topo {
+            background-color: darkgray;
+            border-bottom: 1px solid black;
+            font-weight: 600;
+            margin-top: 0px;
+            margin-bottom: 3px;
+        }
+
+        div .topo:hover{
+            color: red;
+        }
+
+        div .conteudo {
+            font-size: 14px;
+            text-align: justify;
+            text-indent: 10px;
+            margin: 0px 10px;
+        }
+
+        div:hover {
+            background-color: yellow;
+        }
+
+        main {
+            background-color: lightgray;
+            color: black;
+            border-radius: 10px;
+            width: 600px;
+            padding-left: 10px;
+            padding-bottom: 1px;
+            margin: auto;
+        }
+
+        main h2 {
+            text-align: center;
+            margin-bottom: 1%;
+        }
+
+        main p {
+            margin-top: 1px;
+            margin-bottom: 3px;
+        }
+
+        main ul {
+            font-weight: 500;
+            margin-top: 1px;
+        }
+
+        .style {
+            font-weight: 600;
+            color: black;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        #pri {
+            background-color: lightcoral;
+            border-style: groove;
+            border-color: red;
+        }
+
+        #seg {
+            background-color: lightyellow;
+            border-style: ridge;
+            border-color: yellow;
+        }
+
+        #ter {
+            background-color: lightgreen;
+            border-style: inset;
+            border-color: green;
+        }
+
+        #qua {
+            background-color: lightblue;
+            border-style: outset;
+            border-color: blue;
+        }
+
+        .esconder > p {
+            display: none;
+        }
+
+        .esconder:hover > p {
+            display: block;
+        }
+        .esconder:hover {
+            text-align: center;
+            font-weight: 600;
+            border-radius: 20px;
+            box-shadow: 2px 1px 10px 5px goldenrod;
+            width: 170px;
+            padding: 10px;
+            color: red;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: tomato;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: gold;
+        }
+        
+        a::before {
+            content: '☞ ';
+            font-weight: 100;
+            color: black
+        }
+
+        a::after {
+            content: ' ☜';
+            font-weight: 100;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadro">
+        <p class="topo">01</p>
+        <p class="conteudo">Esse é o principal ponto da tecnologia. Por um lado, ela cria um apetite por imortalidade e, por outro, ameaça extinção universal. Tecnologia é a luxúria removida da natureza.</p>
+    </div>
+    <div class="quadro">
+        <p class="topo">02</p>
+        <p class="conteudo">A primeira regra de qualquer tecnologia utilizada nos negócios é que a automação aplicada a uma operação eficiente aumentará a eficiência. A segunda é que a automação aplicada a uma operação ineficiente aumentará a ineficiência.</p>
+    </div>
+    <div class="quadro">
+        <p class="topo">03</p>
+        <p class="conteudo">Todas as maiores invenções tecnológicas criadas pelo homem — o avião, o automóvel, o computador — dizem pouco sobre sua inteligência, mas falam bastante sobre sua preguiça.</p>
+    </div>
+    <main>
+        <h2><em>border-style</em></h2>
+        <p>Estaremos testando os valores da da propriedade <em><strong>border-style</strong></em>.</p>
+        <p>São eles:</p>
+        <ul>
+            <li id="pri" class="style">groove</li>
+            <li id="seg" class="style">ridge</li>
+            <li id="ter" class="style">inset</li>
+            <li id="qua" class="style">outset</li>
+        </ul>        
+    </main>
+    <p>Passe o mouse sobre o texto abaixo:</p>
+    <div class="esconder">
+        Passe o mouse aqui!
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do Exemplo</p>
+    <h2>Personalizando Links</h2>
+    <ul>
+        <li><a href="https://github.com" target="_blank" rel="external">GitHub</a></li>
+        <li><a href="https://youtube.com" target="_blank" rel="external">YouTube</a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank" rel="external">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

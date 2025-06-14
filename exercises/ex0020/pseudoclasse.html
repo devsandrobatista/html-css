@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body {
+            background-image: linear-gradient(#2D3540, #6B735C, #868C58);
+            background-attachment: fixed;
+        }
+
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            
+        }
+
+        div:hover {
+            background-color: yellow;
+        }
+
+        p {
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: yellow;
+        }
+
+        #principal {
+            background-image: linear-gradient(to top, #031059 20%, #F2E205);
+            color: white;
+            border-radius: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;
+            text-align: center;
+            text-shadow: 1px 2px 2px black;
+        }
+
+        #seletores {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            
+        }
+
+        li:first-child {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <br>
+    <p><a href="./hover.html">Clique aqui!</a></p>  
+    <h1 id="principal">Principais Formas de Seletores Personalizados</h1>
+    <ul id="seletores">
+        <li>Seletor tipo (TAG)</li>
+        <li>Seletor de Classe</li>
+        <li>Seletor de Id</li>
+        <li>Seletor de Atributos</li>
+        <li>Seletor Universal</li>
+        <li>Pseudo-Classes</li>
+        <li>Pseudo-Elementos</li>
+    </ul>
+</body>
+</html>

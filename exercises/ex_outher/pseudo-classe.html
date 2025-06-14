@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classe</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <style>
+        .d1, .d2, .d3 {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        .d1:hover,
+        .d2:hover,
+        .d3:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+        <div class="d1">Tabela 02</div>
+        <div class="d2">Tabela 01</div>
+        <div class="d3">Tabela 03</div>
+    <div class="botoes">
+        <button id="botao-prev"><a href="site-exemplo.html" rel="prev">Página Anterior</a></button>
+        <button id="botao-next"><a href="hover.html" rel="next">Próxima Página</a></button>
+    </div>
+</body>
+</html>
