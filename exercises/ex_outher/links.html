@@ -6,14 +6,29 @@
     <title>Links</title>
     <style>
         body {
+            background-color: black;
+            color: white;
             font-family: Arial, Helvetica, sans-serif;
+        } 
+
+        #main-header {
+            background-image: linear-gradient(#132B40, #0E3659, #1A1D26);
+            padding: 7px;
+            margin: -7.8px;
         }
 
-        h1 {
+        #main-header #main-title {
+            background-image: linear-gradient(to left, #2A8C82 10%, #42cbbd, #9BF2EA);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            color: black;
+            font-size: 4em;
             text-align: center;
         }
 
-        a {
+        /* a {
             color: brown;
             text-decoration: none;
         }
@@ -52,18 +67,186 @@
         button a:hover {
             background-color: gold;
             color: red;
+        } */
+
+        :root {
+            --cor-tag: rgb(147, 18, 147);
+            --cor-attribute: rgb(0, 190, 0);
+            --cor-attribute-value: rgb(242, 203, 15);
+            --cor-property: rgb(0, 180, 255);
+            --background-exemplo: rgba(47, 47, 47, 0.847);
         }
 
+        div#header .red {
+            color: red;
+        }
 
+        div#header .attribute-value {
+            color: gold;
+        }
+
+        #header {
+            background-image: linear-gradient(to top right, #F27244 10%, #000, #F27F3D 90%);
+            padding: 7px;
+            margin: -7px;
+            text-align: center;
+        }
+
+        #header h1 {
+            margin-top: -4px;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        #header h1 > .p1 {
+            font-size: 1.3em;
+        }
+
+        #header h1 > .p3 {
+            font-size: .75em;
+            font-weight: normal;
+        }
+
+        #header .attribute {
+            color: var(--cor-attribute);
+        }
+
+        #header abbr {
+            cursor: default;
+            letter-spacing: 1px;
+
+            transition: .3s linear;
+        }
+
+        #header abbr:hover {
+            text-decoration-thickness: 3.7px;
+            letter-spacing: 2px;
+        }
+
+        div#main {
+
+        }
+
+        div#main i {
+            font-weight: bold;
+        }
+
+        div#main .declaration {
+            background-color: var(--background-exemplo);
+            padding: 4px;
+        }
+        
+        div#main .tag {
+            color: var(--cor-tag);
+        }
+        
+        div#main .attribute {
+            color: var(--cor-attribute);
+        }
+
+        div#main .attribute-value {
+            color: var(--cor-attribute-value);
+        }
+
+        div#main .link {
+            cursor: pointer;
+        }
+
+        div#main .link:hover {
+            color: var(--cor-property);
+            text-decoration: underline;
+        }
+
+        div#main .link:active {
+            color: var(--cor-attribute-value);
+        }
+
+        div#main div.exemplo {
+            background-color: var(--background-exemplo);
+            border-radius: 4px;
+            padding: 10px;
+            white-space: pre;
+            width: 600px;
+            margin: auto;
+            font-size: 13px;
+        }
+
+        div#main .comment {
+            color: darkslateblue;
+        }
+
+        div#main .global-object {
+            color: var(--cor-tag);
+        }
+
+        div#main .property {
+            color: var(--cor-property);
+        }
+
+        div#main .conditional-structure {
+            color: var(--cor-tag);
+        }
     </style>
 </head>
 <body>
-    <h1>Personalizando Links</h1>
-    <ul>
-        <li><a href="https://github.com" target="_blank" rel="external">Repositório GitHub</a></li>
-        <li><a href="https://youtube.com" target="_blank" rel="external">Canal do YouTube</a></li>
-        <li><a href="https://cursoemvideo.com" target="_blank" rel="external">Site do CursoemVideo</a></li>
-    </ul>
+    <div id="main-header">
+        <h1 id="main-title">Personalizando Links</h1>
+    </div>
+    <div class="links">
+        <ul>
+            <li><a href="https://github.com" target="_blank" rel="external">Repositório GitHub</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="external">Canal do YouTube</a></li>
+            <li><a href="https://cursoemvideo.com" target="_blank" rel="external">Site do CursoemVideo</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div id="header">
+        <img class="imagem-topo" src="src/images/logo-html-logo-atencao.png" width="140" height="120" alt="Logo HTML5">
+        <h1><span class="p1"><span class="red">Perigo</span> ao usar</span><br> <span class="p2"><span class="attribute">target</span> <span class="attribute-value">'_blank'</span></span><br><span class="p3"> no <abbr title="HyperText Markup Language">HTML</abbr></h1></span>
+    </div>
+    <div id="main">
+        <h2>Entendendo o risco &#x26A0&#xFE0F</h2>
+        <p>Atenção ao Usar <span class="declaration"><span class="attribute">target</span>=<span class="attribute-value">'_blank'</span></span> em Links HTML</p>
+        <div class="exemplo">
+            <span class="tag">&lt;a <span class="attribute">href</span>=<span class="attribute-value link">"http://exemploexterno.com"</span> <span class="attribute">target</span>=<span class="attribute-value">"_blank"</span>&gt;</span>Visite Externo<span class="tag">&lt;/a&gt;</span>
+        </div>
+        <p>Este link abre <i>http://exemploexterno.com</i> em uma nova aba, mas sem proteções adequadas, a página externa pode explorar a vulnerabilidade.</p>
+        <p>Vamos entender como um site externo poderia interceptar e fazer algo malicioso.</p>
+        <h2>Exemplo Site Externo</h2>
+        <p>Explorando o link vindo de um link com <span class="attribute-value">_blank</span></p>
+        <div class="exemplo">
+            <span class="comment">&lt;!-- EXEMPLO: (Página Externa Maliciosa) --&gt;</span>
+            <span class="tag">&lt;html&gt;</span>
+            <span class="tag">&lt;head&gt;</span>
+                <span class="tag">&lt;meta <span class="attribute">charset</span>= <span class="attribute-value">"UTF-8"</span> &gt;</span>
+                <span class="tag">&lt;title&gt;</span>Página Externa Maliciosa<span class="tag">&lt;/title&gt;</span>
+                <span class="tag">&lt;script&gt;</span>
+                        <span><span class="global-object">window</span><span class="property">.onload</span> <span class="tag">= function</span>() {</span>
+
+                        <span class="comment">// Verifica se a propriedade window.opener está disponível</span>
+                        <span class="conditional-structure">if </span>(<span class="global-object">window</span><span class="property">.opener</span>) {
+                        
+                            <span class="comment">// Tenta redirecionar a página original para um site malicioso</span>
+                            <span class="global-object">window</span><span class="property">opener.location</span> = <span class="attribute-value link">'https://site-malicioso.com'</span>;
+                            }
+                        };
+                <span class="tag">&lt;/script&gt;</span>
+            <span class="tag">&lt;/head&gt;</span>
+            <span class="tag">&lt;body&gt;</span>
+                <span class="tag">&lt;h1&gt;</span>Você está na Página Externa<span class="tag">&lt;/h1&gt;</span>
+            <span class="tag">&lt;/body&gt;</span>
+            <span class="tag">&lt;/html&gt;</span>
+        </div>
+        <p>Verifica se <b>window.opener</b> está disponível, o que indicaria que ela foi aberta a partir de outra página usando <span class="declaration"><span class="attribute">target</span>=<span class="attribute-value">"_blank"</span></span> Se estiver disponível, tenta redirecionar a página original (window.opener.location) para um site malicioso.</p>
+        <h2>Solução</h2>
+        <p>É recomendado adicionar o atributo rel com os valores <b>noopener noreferrer</b> ao elemento de âncora</p>
+        <div class="exemplo">
+            <span class="tag">&lt;a <span class="attribute">href</span>=<span class="attribute-value link">"http://exemploexterno.com"</span> <span class="attribute">target</span>=<span class="attribute-value">"_blank"</span> <span class="attribute">rel</span>=<span class="attribute-value">"noopener noreferrer"</span>&gt;</span>Visite Externo<span class="tag">/a</span>
+        </div>
+        <p>&#x261E <span class="attribute"><b>rel="noopener"</b></span> impede que a página aberta tenha acesso à página original via window.opener.</p>
+        <p>&#x261E <span class="attribute"><b>rel="noreferrer"</b></span> também impede que o Referer seja enviado para a nova página, o que pode ser útil para proteger a privacidade e também implica noopener em muitos navegadores.</p>
+        <p>Dessa forma você protege os usuários contra possíveis explorações maliciosas ao usar <span class="declaration"><span class="attribute">target</span>=<span class="attribute-value">"_blank"</span></span></p>
+    </div>
+    
     <button><a href="index.html">HomePage</a></button>
 </body>
 </html>
