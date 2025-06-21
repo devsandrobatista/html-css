@@ -49,8 +49,8 @@ header a:hover {
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     padding-left: 30px;
     font-size: 3.7vw;
 }
@@ -61,7 +61,10 @@ section {
 }
 
 .imagem {
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, .5), inset -6px -6px 10px rgba(255, 255, 255, .5);
     background-color: #3d3c3c;
+    background-size: cover;
+    background-attachment: fixed;
     color: #fff;
 }
 
@@ -72,10 +75,22 @@ section {
 }
 
 section.imagem > .estrofe {
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .4);
+    padding: 10px;
+    border-radius: 10px;
     display: inline-block;
+    text-shadow: 2px 2px 0 #000;
 }
 
+section.imagem-1 {
+    background-image: url('../image/background001.jpg');
+    background-position: right center;
+}
+
+section.imagem-2 {
+    background-image: url('../image/background002.jpg');
+    background-position: center center;
+}
 
 footer {
     background-color: #000;
