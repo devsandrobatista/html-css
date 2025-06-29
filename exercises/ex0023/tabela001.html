@@ -9,18 +9,31 @@
             font-family: Arial, sans-serif;
         }
 
+        h1 { 
+            text-align: center;
+            text-transform: uppercase;
+            color: #333;
+        }
+
         table {
             width: 400px;
             height: 400px;
+            outline: 3px solid red;
+            outline-offset: 10px;
             border-collapse: collapse;
+            margin: auto;
         }
 
-        table td{
+        table td {
             border: 1px solid black;
-            padding: 8px;
-            text-align: center;  /* Alinhamento Horizontal */
-            vertical-align: ;
-        } 
+            padding: 10px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: middle; /* Alinhamento Vertical */
+        }
+
+        table .numero {
+            text-align: right;
+        }
     </style>
 </head> 
 <body>
@@ -33,22 +46,22 @@
     -->
     <h1>Minha primeira tabela</h1>
     <table>
-        <tr>    <!-- PRIMEIRA LINHA -->
+        <tr>   <!-- PRIMEIRA LINHA -->
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
-        </tr>
-        <tr>    <!-- SEGUNDA LINHA -->
+        </tr> 
+        <tr>   <!-- SEGUNDA LINHA -->
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
-        <tr>    <!-- TERCEIRA LINHA -->
+        <tr>   <!-- TERCEIRA LINHA -->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
-        <tr>    <!-- QUARTA LINHA -->
+        <tr>   <!-- QUARTA LINHA -->
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
