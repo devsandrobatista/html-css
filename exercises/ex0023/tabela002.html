@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Página 02</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        table .border {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: middle; /* Alinhamento Vertical */
+        }
+
+        table th.border {
+            background-color: gray;
+            color: white;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA DE TABELAS (grandes)
+        TABLE = tabela
+            THEAD = cabeçalho da tabela
+                TR = linha do cabeçalho
+                    TH = célula de cabeçalho
+                    TD = célula de dados
+            TBODY = corpo da tabela
+                TR = linha do corpo
+                    TH = célula de cabeçalho
+                    TD = célula de dados
+            TFOOT = rodapé da tabela
+                TR = linha do rodapé    
+                    TH = célula de cabeçalho
+                    TD = célula de dados
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th class="border">Estado</th>
+                <th class="border num">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row" id="primeira">
+                <td class="border">São Paulo</td>
+                <td class="border num">45 973 194</td>
+            </tr>
+            <tr class="row" id="segunda">
+                <td class="border">Minas Gerais</td>
+                <td class="border num">21 322 691</td>
+            </tr>
+            <tr class="row" id="terceira">
+                <td class="border">Rio de Janeiro</td>
+                <td class="border num">17 219 679</td>
+            </tr>
+            <tr class="row" id="quarta">
+                <td class="border">Bahia</td>
+                <td class="border num">14 850 513</td>
+            </tr>
+            <tr class="row" id="quinta">
+                <td class="border">Paraná</td>
+                <td class="border num">11 824 665</td>
+            </tr>
+            <tr class="row" id="sexta">
+                <td class="border">Rio Grande do Sul</td>
+                <td class="border num">11 229 915</td>
+            </tr>
+            <tr class="row" id="setima">
+                <td class="border">Pernambuco</td>
+                <td class="border num">9 539 021</td>
+            </tr>
+            <tr class="row" id="oitava">
+                <td class="border">Ceará</td>
+                <td class="border num">9 233 656</td>
+            </tr>
+            <tr class="row" id="nona">
+                <td class="border">Pará</td>
+                <td class="border num">8 664 306</td>
+            </tr>
+            <tr class="row" id="decima">
+                <td class="border">Santa Catarina</td>
+                <td class="border num">8 058 441</td>
+            </tr>
+            <tr class="row" id="decima-primeira">
+                <td class="border">Goiás</td>
+                <td class="border num">7 350 483</td>
+            </tr>
+            <tr class="row" id="decima-segunda">
+                <td class="border">Maranhão</td>
+                <td class="border num">7 010 960</td>
+            </tr>
+            <tr class="row" id="decima-terceira">
+                <td class="border">Amazonas</td>
+                <td class="border num">4 281 209</td>
+            </tr>
+            <tr class="row" id="decima-quarta">
+                <td class="border">Paraiba</td>
+                <td class="border num">4 145 040</td>
+            </tr>
+            <tr class="row" id="decima-quinta">
+                <td class="border">Espírito Santo</td>
+                <td class="border num">4 102 129</td>
+            </tr>
+            <tr class="row" id="decima-sexta">
+                <td class="border">Mato Grosso</td>
+                <td class="border num">3 836 399</td>
+            </tr>
+            <tr class="row" id="decima-setima">
+                <td class="border">Rio Grande do Norte</td>
+                <td class="border num">3 446 071</td>
+            </tr>
+            <tr class="row" id="decima-oitava">
+                <td class="border">Piauí</td>
+                <td class="border num">3 375 646</td>
+            </tr>
+            <tr class="row" id="decima-nona">
+                <td class="border">Alagoas</td>
+                <td class="border num">3 220 104</td>
+            </tr>
+            <tr class="row" id="vigésima">
+                <td class="border">Distrito Federal</td>
+                <td class="border num">3 982 818</td>
+            </tr>
+            <tr class="row" id="vigésima-primeira">
+                <td class="border">Mato Grosso do Sul</td>
+                <td class="border num">2 901 895</td>
+            </tr>
+            <tr class="row" id="vigésima-segunda">
+                <td class="border">Sergipe</td>
+                <td class="border num">2 291 077</td>
+            </tr>
+            <tr class="row" id="vigésima-terceira">
+                <td class="border">Rondônia</td>
+                <td class="border num">1 746 227</td>
+            </tr>
+            <tr class="row" id="vigésima-quarta">
+                <td class="border">Tocantins</td>
+                <td class="border num">1 577 342</td>
+            </tr>
+            <tr class="row" id="vigésima-quinta">
+                <td class="border">Acre</td>
+                <td class="border num">880 631</td>
+            </tr>
+            <tr class="row" id="vigésima-sexta">
+                <td class="border">Amapá</td>
+                <td class="border num">802 837</td>
+            </tr>
+            <tr class="row" id="vigésima-sétima">
+                <td class="border">Roraima</td>
+                <td class="border num">716 793</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="border">Total de Habitantes</th>
+                <td class="border num"><strong>212 583 750</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
