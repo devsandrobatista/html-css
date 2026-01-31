@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints 
+    Mobile: até 600px;
+    Tablet: 768px a 992px;
+    Desktop: 992px a 1200px;  
+    Grandes telas: acima de 1200px;
+*/
+
+@media print { /* Impressão */
+    body {
+        background-color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 1px solid #000;
+    }
+    
+    main h1 {
+        text-shadow: none;
+        color: #000;
+    }
+
+    img#phone, img#tablet, img#pc, img#tv {
+        display: none; /* Esconde todas as imagens */
+    }
+
+    img#print {
+        display:block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    body {
+        background-image: url("../images/back-tablet.jpg");
+    }
+
+    img#phone, img#print, img#pc, img#tv { 
+        display: none;
+    }
+
+    img#tablet { 
+        display: block;
+    }
+
+    .vs.phone, .vs.pc, .vs.print, .vs.tv {
+        display: none; /* Esconde todas as imagens */
+    }
+
+    .vs.tablet {
+        display: block; /* Exibe a imagem do telefone */
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Desktop */
+    body {
+        background-image: url("../images/back-pc.jpg");
+    }
+
+    img#phone, img#tablet, img#print, img#tv { 
+        display: none;
+    }
+
+    img#pc { 
+        display: block;
+    }
+
+    .vs.phone, .vs.tablet, .vs.print, .vs.tv {
+        display: none; /* Esconde todas as imagens */
+    }
+
+    .vs.pc {
+        display: block; /* Exibe a imagem do telefone */
+    }
+
+}
+
+@media screen and (min-width: 1200px) { /* Grandes telas */
+    body {
+        background-image: url("../images/back-tv.jpg");
+    }
+
+    img#phone, img#tablet, img#print, img#pc { 
+        display: none;
+    }
+
+    img#tv { 
+        display: block;
+    }
+
+    .vs.phone, .vs.pc, .vs.print, .vs.tablet {
+        display: none; /* Esconde todas as imagens */
+    }
+
+    .vs.tv {
+        display: block; /* Exibe a imagem do telefone */
+    }
+
+}

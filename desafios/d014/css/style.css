@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #034159;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 40px 1fr 40px;
+  grid-template-columns: 1fr 150px;
+  gap: 5px;
+}
+
+.box {
+  background-color: lightgray;
+  padding: 10px;
+  border: 1px solid #000;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  grid-area: 1 / 1 / -4 / -1;
+}
+
+.menu {
+  grid-area: 2 / 1 / -3 / -1;
+}
+
+.main {
+  grid-area: 3 / 1 / -2 / -2;
+}
+
+.side {
+  grid-area: 3 / 2 / -2 / -1;
+}
+
+.footer {
+  grid-area: 4 / 1 / -1 / -1;
+}
+
+s

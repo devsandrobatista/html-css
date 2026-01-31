@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style>
+        @font-face {
+            font-family: "gamer";
+            src: url(src/fonts/VCR_OSD_MONO_1.001.ttf) format("truetype");
+        }
+
+        @keyframes mymove {
+            from {background-color: #2d5731;}
+            to {background-color: #7b6823;}
+        }
+
+        body {
+            background: #7B6823;
+            animation: mymove 2s alternate infinite;
+        }
+
+        h1 {
+            font-size: 26.5px;
+            text-align: center;
+        }
+
+        .link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .link:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .painel {
+            background-color: #1e1f23;
+            border-radius: 3px;
+            width: 210px;
+            height: 55px;
+            border: 2px solid black;
+        }
+        
+        .painel {
+            font-family: "gamer";
+            font-size: 14px;
+            text-align: justify;
+            color: white;
+        }
+
+        div .title {
+            background-color: white;
+            text-indent: 5px;
+            color: black;
+            position: relative;
+            bottom: 14px;
+            margin-bottom: -10px;
+        }
+
+        .author {
+            font-size: 12px;
+            margin-top: -5px;
+            margin-left: 7px;
+        }
+
+        .botoes > div {
+            display: inline-block;
+            font-size: 13px;
+            font-family: "gamer";
+            font-weight: bold;
+            position: relative;
+            bottom: 64px;
+            left: 155px;
+        }
+        
+        div a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .botoes a {
+            cursor: pointer;
+        }
+
+        #minimizar a:hover {
+            color: gold;
+        }
+
+        #fullscren a:hover {
+            color: gold;
+        }
+
+        #fechar a:hover {
+            color: red
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .classes {
+            color: #4ca8ff;
+            text-decoration: underline;
+        }
+
+        .classes:hover {
+            color: violet;
+            cursor: pointer;
+        }
+
+        :dir(rtl) {
+            background-color: red;
+        }
+
+        ul {
+            background-color: #1e1f23;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .links a:visited {
+            color: lightskyblue;
+        }
+        
+        .links a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .links a:active {
+            color: red;
+        }
+
+        .links a::before {
+            content: '[Clique aqui]  ';
+            color: lightcoral;
+        }
+
+        .links a::after {
+            content: ' [link]';
+            color: lightcoral;
+        }
+
+        ul {
+            color: white;
+            border: 10px solid red;
+            padding: 25px;
+            margin: auto;
+        }
+
+        button {
+            background-color: #1e1f23;
+            border: 2px solid red;
+            border-radius: 5px;
+            color: red;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px whitesmoke;
+        }
+
+        button:hover {
+            background-color: #40424b;
+            outline: 1px solid whitesmoke;
+        }
+
+        button:active{
+            background-color: rgba(255, 233, 108, 0.425);
+        }
+
+        img {
+            border: 2px groove red;
+            margin-bottom: 0px;
+            position: relative;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .texto {
+            font-weight: bold;
+            margin-top: 1px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .texto em {
+            color: white;
+            display: list-item;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixas <em>block-level (elementos de blocos)</em></h1>
+    <p>Parágrafos também são exemplos de <em>block-level</em>, mas os <a href="#" class="link">links são exemplos de caixas <em>inline-level</em></a>. Vamos ver como tudo isso funciona</p>
+    <div class="painel">
+        <p class="title">EDIÇÃO</p>
+        <p class="author" title="Dono de Jenifer Pereira dos Santos">SANDRO BATISTA DOS SANTOS</p>
+        <p class="author">JENIFER PEREIRA DOS SANTOS</p>
+        <div class="botoes">
+            <div id="minimizar"><a href="#">&#9866</a></div>
+            <div id="fullscren"><a href="#">&#9744</a></div>
+            <div id="fechar"><a href="#">&#9747</a></div>
+        </div>
+    </div>
+    <hr>
+    <h2>Pseudo-Classes</h2>
+    <h3>Pseudo-Classes Linguísticas</h3>
+    <p class="classes">:dir()</p>
+    <p class="exemplos" dir="rtl">GAMER</p>
+    <h3>English Language</h3>
+    <p lang="en-US">My name is Sandro, I am developer web.</p>
+    <ul>
+        LINKS
+        <li class="links"><a href="https://google.com" target="_blank"
+            rel="external">Google</a></li>
+        <li class="links"><a href="https://youtube.com" target="_blank"
+            rel="external">YouTube</a></li>
+        <li class="links"><a href="https://facebook.com" target="_blank"
+            rel="external">Facebook</a></li>
+    </ul>
+    <button>OUTLINE</button>
+    <hr>
+    <h3 style="text-align: center;">IMAGENS</h3>
+    <img src="https://coisasdojapao.com/wp-content/uploads/2017/06/musicasdeanimesJap%C3%A3o.jpg" width="300px" alt="">
+    <p class="texto">Na imagem acima é mostrado os melhores animes ditos pelo <em>otakus</em><strong>sandrosano</strong>.</p>
+</body>
+</html>

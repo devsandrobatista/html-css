@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conteúdo Flex</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main-heading">FLEX CONTENT</h1>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li>
+            <a href="#content1" class="nav-link"
+              >Conteúdo <span class="hex-number">&#x2160;</span></a
+            >
+          </li>
+          <li>
+            <a href="#content2" class="nav-link"
+              >Conteúdo <span class="hex-number">&#x2161;</span></a
+            >
+          </li>
+          <li>
+            <a href="#content3" class="nav-link"
+              >Conteúdo <span class="hex-number">&#x2162;</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-primary normal" id="home">
+        <h2 class="heading-secondary">Exemplo de conteúdo flexível</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          quisquam fugiat natus animi aliquam tenetur dolores similique commodi,
+          voluptates ea nemo cumque consectetur ab excepturi vel eveniet
+          exercitationem molestias voluptatibus recusandae suscipit. Eveniet
+          excepturi, aspernatur ducimus ratione quas quibusdam vitae voluptas
+          autem tempore inventore, est libero officiis deleniti perferendis
+          harum?
+        </p>
+      </section>
+      <section class="section-secondary flex-content">
+        <article class="media-text" id="content1">
+          <div class="text-box">
+            <h3 class="heading-terteary">Elemento Media &#x27AA; Text</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              officia beatae facere impedit, ipsam quae. Magni dolorum numquam
+              ad animi nemo blanditiis quibusdam voluptatem nisi ipsam? Eos modi
+              dolores itaque consectetur illum repudiandae! Quidem quibusdam ut
+              sunt porro ab officia vel hic amet id, deleniti fugiat doloremque
+              corrupti optio neque est repellat laboriosam quis natus placeat?
+              Veritatis, sed! Aliquam animi quae architecto voluptate rem
+              aperiam eligendi doloribus praesentium nesciunt ex, facere
+              deserunt nam quo voluptatem aspernatur quas possimus, dolor eum
+              voluptates eveniet veniam vero, ad omnis. Totam, fugiat autem,
+              itaque assumenda sapiente unde eveniet corrupti ratione odit
+              deserunt nemo voluptatum.
+            </p>
+          </div>
+          <div class="media-box">
+            <figure>
+              <img
+                src="assets/images/site.png"
+                alt="Pessoa usando painel digital com gráficos"
+              />
+            </figure>
+          </div>
+        </article>
+        <article class="text-media" id="content2">
+          <div class="text-box">
+            <h3 class="heading-terteary">Elemento Text &#x27AA; Media</h3>
+            <p class="text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Explicabo, ab officiis quasi porro nobis consequatur, voluptatibus
+              alias corporis fugiat itaque enim ad dolor hic, quam culpa
+              placeat? Nemo placeat, sed nostrum eum cumque distinctio debitis,
+              nobis assumenda corrupti, dicta deleniti optio possimus pariatur
+              alias. Non commodi dolore in eius, quod deleniti, aspernatur,
+              delectus molestias minus labore nihil eos perspiciatis aut.
+            </p>
+            <p class="text">
+              Debitis eius quasi pariatur beatae, nobis quisquam incidunt
+              voluptate esse accusamus, maxime delectus officiis, inventore
+              deserunt maiores nemo facilis et ipsa placeat aperiam quaerat?
+              Aliquid laudantium laborum ea ipsam alias sit praesentium odit,
+              perspiciatis deleniti quas provident dolore nostrum! Voluptatibus
+              sequi fuga dicta eos sunt sint iste maiores in. Cumque tenetur
+              beatae illum explicabo obcaecati. Delectus totam cupiditate soluta
+              minus?
+            </p>
+          </div>
+          <div class="media-box">
+            <iframe
+              width="560"
+              height="315"
+              class="video"
+              src="https://www.youtube.com/embed/h3pPwp0mkQE"
+              title='CGI 3D Animated Short: "Canned" by Ivan Joy, Nate Hatton, and Tanya Zaman + Ringling | TheCGBros'
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </article>
+      </section>
+      <section class="section-terteary normal" id="content3">
+        <h2 class="heading-secondary">Conteúdo normal</h2>
+        <p class="text">
+          O Flexbox organiza elementos em uma página. Em um container flex, cada
+          item é tratado como um “conteúdo normal”, que pode ser alinhado,
+          distribuído e redimensionado de acordo com as regras definidas pelo
+          desenvolvedor. Isso mostra como o Flexbox transforma até mesmo
+          conteúdos simples em elementos flexíveis e responsivos, garantindo que
+          o layout se adapte de forma eficiente a diferentes tamanhos de tela
+        </p>
+        <p class="text">
+          Além disso, o Flexbox facilita a centralização de textos, imagens e
+          caixas, tanto na horizontal quanto na vertical, algo que antes exigia
+          truques complicados com margens ou posicionamento absoluto.
+          Propriedades como justify-content e align-items permitem que o
+          desenvolvedor controle o espaço entre os itens e o alinhamento deles,
+          garantindo que o layout se mantenha organizado em diferentes tamanhos
+          de tela.
+        </p>
+        <p class="text">
+          Outro ponto importante é que o Flexbox substitui técnicas antigas,
+          como o uso de float e inline-block, que muitas vezes geravam problemas
+          de compatibilidade e exigiam correções manuais. Com o Flexbox, o
+          trabalho se torna mais simples e eficiente, permitindo que até mesmo
+          conteúdos normais sejam exibidos de forma moderna e adaptável.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

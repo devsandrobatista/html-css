@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIsta de unidades federativas do Brasil por população</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table caption {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        table thead {
+            background-color: #d7e3f0;
+        }
+
+        table .style {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        table .num {
+            text-align: right;
+        }
+
+        table .pais-comp {
+            text-align: center;
+
+        }
+
+        table tbody tr:hover {
+            background-color: rgb(193, 217, 225);
+        }
+
+        table tbody tr td:hover {
+            background-color: rgb(250, 192, 201);
+        }
+
+        table tfoot {
+            background-color: #d7e3f0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Unidades federativas do Brasil por população</caption>
+        <thead>
+            <tr>
+                <th class="style" id="uni-federativa" rowspan="2">Unidade federativa</th>
+                <th class="style" id="populacao" colspan="2">População</th>
+                <th class="style" id="variacao" colspan="2">Variação (2010-2022)</th>
+                <th class="style" id="porcetagem-tot" rowspan="2" style="width: 70px;">&percnt; do total (2024)</th>
+                <th class="style" id="comp-pais" rowspan="2">País comparável (habitantes)</th>
+            </tr>
+            <tr>
+
+                <th class="style" id="pop-2024">2024 (est.)</th>
+                <th class="style" id="pop-2022">2022</th>
+                <th class="style" id="var-porcentagem" style="width: 20px;">&percnt;</th>
+                <th class="style" id="var-absoluta"><abbr title="Variação Absoluta" style="cursor: help;">Abs</abbr></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="primeira">
+                <td class="style uf">São Paulo</td>
+                <td class="style num pop2024">45 973 194</td>
+                <td class="style num pop2022">44 411 238</td>
+                <td class="style num var-perc">7,63%</td>
+                <td class="style num var-abs">3 149 039</td>
+                <td class="style num perc-total">21,63%</td>
+                <td class="style pais-comp">Iraque (46 042 015)</td>
+            </tr>
+            <tr id="segunda">
+                <td class="style uf">Minas Gerais</td>
+                <td class="style num pop2024">21 322 691</td>
+                <td class="style num pop2022">20 539 989</td>
+                <td class="style num var-perc">4,81%</td>
+                <td class="style num var-abs">942 659</td>
+                <td class="style num perc-total">10,03%</td>
+                <td class="style pais-comp">Zâmbia (21 314 956)</td>
+            </tr>
+            <tr id="terceira">
+                <td class="style uf">Rio de Janeiro</td>
+                <td class="style num pop2024">17 219 679</td>
+                <td class="style num pop2022">16 055 174</td>
+                <td class="style num var-perc">0,41%</td>
+                <td class="style num var-abs">65 245</td>
+                <td class="style num perc-total">8,10%</td>
+                <td class="style pais-comp">Camboja (17 638 801)</td>
+            </tr>
+            <tr id="quarta">
+                <td class="style uf">Bahia</td>
+                <td class="style num pop2024">14 850 513</td>
+                <td class="style num pop2022">14 141 626</td>
+                <td class="style num var-perc">0,89%</td>
+                <td class="style num var-abs">124 720</td>
+                <td class="style num perc-total">6,99%</td>
+                <td class="style pais-comp">Guiné (14 754 785)</td>
+            </tr>
+            <tr id="quinta">
+                <td class="style uf">Paraná</td>
+                <td class="style num pop2024">11 824 665</td>
+                <td class="style num pop2022">11 444 380</td>
+                <td class="style num var-perc">9,57%</td>
+                <td class="style num var-abs">999 854</td>
+                <td class="style num perc-total">5,56%</td>
+                <td class="style pais-comp">Haiti (11 772 557)</td>
+            </tr>
+            <tr id="sexta">
+                <td class="style uf">Rio Grande do Sul</td>
+                <td class="style num pop2024">11 229 915</td>
+                <td class="style num pop2022">10 882 965</td>
+                <td class="style num var-perc">1,77%</td>
+                <td class="style num var-abs">189 036</td>
+                <td class="style num perc-total">5,28%</td>
+                <td class="style pais-comp">República Dominicana (11 427 557)</td>
+            </tr>
+            <tr id="setima">
+                <td class="style uf">Pernambuco</td>
+                <td class="style num pop2024">9 539 029</td>
+                <td class="style num pop2022">9 058 937</td>
+                <td class="style num var-perc">2,98%</td>
+                <td class="style num var-abs">262 483</td>
+                <td class="style num perc-total">4,49%</td>
+                <td class="style pais-comp">Togo (9 515 236)</td>
+            </tr>
+            <tr id="oitava">
+                <td class="style uf">Ceará</td>
+                <td class="style num pop2024">9 233 656</td>
+                <td class="style num pop2022">8 794 957</td>
+                <td class="style num var-perc">4,05%</td>
+                <td class="style num var-abs">342 576</td>
+                <td class="style num perc-total">4,34%</td>
+                <td class="style pais-comp">Áustria (9 120 813)</td>
+            </tr>
+            <tr id="nona">
+                <td class="style uf">Pará</td>
+                <td class="style num pop2024">8 664 306</td>
+                <td class="style num pop2022">8 120 131</td>
+                <td class="style num var-perc">7,11%</td>
+                <td class="style num var-abs">539 080</td>
+                <td class="style num perc-total">4,08%</td>
+                <td class="style pais-comp">Serra Leoa (8 642 022)</td>
+            </tr >
+            <tr id="decima">
+                <td class="style uf">Santa Catarina</td>
+                <td class="style num pop2024">8 058 441</td>
+                <td class="style num pop2022">7 610 361</td>
+                <td class="style num var-perc">21,80%</td>
+                <td class="style num var-abs">1 361 925</td>
+                <td class="style num perc-total">3,79%</td>
+                <td class="style pais-comp">Laos (7 381 023)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="style" id="total">Total</th>
+                <td class="style num">169 740 754</td>
+                <td class="style num">151 059 752</td>
+                <td class="style num" style="font-size: 1.5em; text-align: center;">&nbsp;—&nbsp;</td>
+                <td class="style num">7 976 617</td>
+                <td class="style num">74,29%</td>
+                <td class="style" style="font-size:1.5em; text-align: center;">&nbsp;—&nbsp;</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

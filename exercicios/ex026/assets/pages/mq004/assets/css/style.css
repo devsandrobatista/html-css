@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: #000;
+    background-image: url("../images/back-phone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+main {
+    background-color: #ffffffa6;
+    width: 90vw;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main h1 {
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, .842);
+    text-align: center;
+}
+
+main img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+img#tablet, img#pc, img#tv, img#print {display: none; /* Esconde todas as imagens */}
+
+img#phone {display: block; /* Exibe a imagem do telefone */}
+
+.container-versions {
+    font-size: .75em;
+    text-align: center;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vs.tablet, .vs.pc, .vs.print, .vs.tv {display: none; /* Esconde todas as imagens */}
+
+.vs.phone {display: block; /* Exibe a imagem do telefone */}
+
+@keyframes contentmove {
+    from {transform: scale(1);}
+    to {transform: scale(1.15);}
+}
+
+.content {
+    font-size: .90em;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    animation: contentmove 1s alternate infinite;
+}

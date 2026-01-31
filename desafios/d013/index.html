@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Faça o seu login</h1>
+            <div class="barra-hr"></div>
+        </header>
+        <form action="" method="get">
+            <div class="campo-input">
+                <label for="iemail">Seu e-mail*</label>
+                <input class="campo" type="email" name="email" id="iemail" autocomplete="email" required>
+            </div>
+            <div class="campo-input">
+                <label for="isenha">Sua senha*</label>
+                <input class="campo" type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="6" maxlength="10">
+            </div>
+            <div class="lembrar-me">
+                <input type="checkbox" name="lembrar" id="ilembrar">
+                <label for="ilembrar">Lembrar-me</label>
+            </div>
+            <div>
+                <button type="submit" class="btn">Entrar</button>
+            </div>
+        </form>
+        <div>
+            <p>Esqueceu sua senha? <a href="#">Clique aqui!</a></p>
+        </div>
+    </main>
+</body>
+</html>

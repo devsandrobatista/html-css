@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        body {
+            background-image: linear-gradient(darkgray, lightgray, gray);
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: white;
+
+            border-radius: 10px;
+
+            padding: 10px;
+            margin: 10px;
+        }
+
+        section {
+            background-color: white;
+
+            border-radius: 10px;
+
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        header > h1 {
+            text-align: center;
+            text-shadow: 2px 2px 2px darkgray,
+            2px 2px 2px rgb(34, 34, 34);
+        }
+        .titulo{
+            display: list-item;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        .exemplo {
+            color: rgb(172, 172, 172);
+            border: 1px solid lightgray;
+            padding-inline-start: 2px;
+            margin-top: 0px;
+        }
+
+        .exemplo:hover {
+            color: red;
+            border: 1px solid gray;
+        }
+
+        .exemplo-visual {
+            display: block;
+
+            color: red;
+
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 19px;
+            font-weight: bold;
+
+            text-align: center;
+            text-decoration: none;
+            text-shadow: 1px 1px 0px black,
+            1px 1px 3px darkred;
+
+            border: 20px solid transparent;
+            border-image-source: url('src/images/border-image.png');
+            border-image-slice: 29;
+            border-image-repeat: repeat;
+
+            padding: 10px;
+
+            margin-bottom: 20px;
+        }
+
+        .exemplo-visual:hover {
+            color:rebeccapurple;
+            text-decoration: underline;
+        }
+
+        .exemplo-visual:active {
+            color: gold;
+        }
+        footer > p{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Teste de Borda</h1>
+        <p>Para este teste de borda usaremos a propriedade <strong>border-image-source</strong> na CSS.</p>
+    </header>
+    <section>
+        <article>
+            <p class="titulo">Sintaxe</p>
+            <p class="exemplo">border-image-source: url('local da imagem');</p>
+            <aside>
+                <p class="titulo">Exemplo:</p>
+                <p class="exemplo">border-image-source: url('src/image/border-image.png')</p>
+            </aside>
+            <aside>
+                <p class="titulo">Exemplo Visual</p>
+                <a class="exemplo-visual" href="caixas02.html" rel="prev">border-image</a>
+            </aside>
+        </article>
+    </section>
+    <footer>
+        <p>Desenvolvido por <strong><em>Sandro Batista dos Santos</em></strong></p>
+    </footer>
+</body>
+</html>

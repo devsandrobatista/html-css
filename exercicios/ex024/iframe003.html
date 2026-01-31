@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        @keyframes buttonmove {
+            from {border: 2px solid white;}
+            to {border: 2px solid red;}
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            display: block;
+            width: 95vh;
+            height: 400px;
+            max-width: 600px;
+            border: 2px solid black;
+            margin: 0 auto;
+        }
+
+        ul > li {
+            list-style: none;
+        }
+
+        .link {
+            display: inline-block;
+
+            background-color: #023859;
+            box-shadow: 1px 1px 3px 1px rgb(0, 0, 0, .4);
+            width: 150px;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+
+            color: white;
+            text-shadow: 1px 1px 1px red;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+
+            animation: buttonmove .5s alternate infinite;
+            transition: linear .3s;
+        }
+
+        .link:hover {
+            background-color: #50A0BF;
+        }
+
+        .link.blue:active {
+            background-color: #023859;
+        }
+
+        .link:active {
+            transition-timing-function: ;
+        }
+
+        .link.black:active {
+            background-color: #000;
+        }
+
+        .link.red:active {
+            background-color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, ipsam placeat fugit sed sit nisi numquam eius expedita doloremque qui doloribus, quo dolore exercitationem obcaecati asperiores maiores molestias vero itaque reiciendis aliquid maxime, esse impedit dignissimos!</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" class="link blue" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag002.html" class="link black" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag003.html" class="link red" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Laboriosam ipsam nisi, sed libero magnam eum quisquam quod aut aspernatur praesentium. Commodi ea iste repudiandae ipsum fugit cupiditate veniam ratione ipsa, quos voluptates veritatis blanditiis recusandae? Temporibus, quae quis. Magni ipsum, nostrum eveniet eligendi, incidunt animi nobis illum non quibusdam unde at eos eius velit quam asperiores, eum earum delectus repellat culpa officiis fuga amet! Cumque ipsa voluptatum iure!</p>
+
+        <iframe src="paginas-extras/homepag.html" name="frame">
+            <p>Infelizmente seu navegado não é compatível com isso!</p>
+        </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit corrupti molestias illum consequuntur placeat temporibus nostrum eius! Provident, perspiciatis ad beatae esse voluptates praesentium cumque nemo repellat odio, consectetur iure.
+    Rerum corporis hic maiores soluta molestias sed. Quos commodi quidem non dolore eligendi magnam vel tenetur minus, pariatur repellat error repudiandae, deleniti consequuntur quo, delectus sint velit. Magnam, corporis eos?</p>
+</body>
+</html>

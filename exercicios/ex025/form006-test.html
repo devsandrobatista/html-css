@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        header {
+            background-image: linear-gradient(#D78A3A, #F2AB27, #D56F25);
+            padding: 15px;
+            margin: 0 -8.3px;
+        }
+
+        header > h1 {
+            width: 250px;
+            margin: 0 auto;
+            color: white;
+            font-size: 2.5em;
+            text-align: center;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        main > p {
+            width: 250px;
+            font-size: 1.25em;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+
+        @keyframes textmove {
+            from {transform: scale(1.05);}
+            to {transform: scale(1.25);}
+        }
+
+        main > p > .color {
+            display: inline-block;
+            color: #D56F25;
+            animation: textmove 1s alternate infinite;
+            transition: lineark;
+        }
+
+        main > form > div > .campo-email {
+            width: 99%;
+            height: 30px;
+        }
+
+        main > form > div > .button {
+            background-image: linear-gradient(to right, #D78A3A, #D56F25);
+            width: 100vh;
+            margin: 15px -8px 0;
+            border: none;
+            padding: 10px;
+
+            color: white;
+            font-weight: bolder;
+            font-size: 1.25em;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="#" method="gets" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome Completo" minlength="20" maxlength="32">
+            </div>
+            <div>
+                <label for="iend">Endereço:</label>
+                <input type="text" name="end" id="iend" required autocomplete="address-line1">
+            </div>
+            <div>
+                <label for="icity">Cidade:</label>
+                <input type="text" name="city" id="icity" required minlength="5" maxlength="20">
+            </div>
+            <div>
+                <label for="iest">Estado:</label>
+                <select name="est" id="iest" required>
+                    <option value="">Selecione o estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <div>
+                <p>Natureza de Cargo</p>
+                <input type="radio" name="cargo" id="iger" value="Gerência" required><label for="iger">Gerência</label>
+                <input type="radio" name="cargo" id="ifin" value="Financeiro"><label for="ifin">Financeiro</label>
+                <input type="radio" name="cargo" id="irec" value="Recepção"><label for="irec">Recepção</label>
+                <input type="radio" name="cargo" id="iadm" value="Administração"><label for="iadm">Administrativo</label>
+                <input type="radio" name="cargo" id="ijuc" value="Jurídico"><label for="ijuc">Jurídico</label>
+            </div>
+            <div>
+                <p><label for="">Área de interesse</label></p>
+                <input type="checkbox" name="" id="icomp" required><label for="icomp">Computação</label>
+                <input type="checkbox" name="" id="ibio"><label for="ibio">Biologia</label>
+                <input type="checkbox" name="" id="imea"><label for="imea">Meio Ambiente</label>
+                <input type="checkbox" name="" id="ieng"><label for="ieng">Engenharia</label>
+                <input type="checkbox" name="" id="ihis"><label for="ihis">História</label>
+            </div>
+            <div>
+                <label for="icur">Mini-Currículo:</label>
+                <textarea name="cur" id="icur" rows="5" cols="44" required>
+
+                </textarea>
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+    <hr>
+    <header>
+        <h1>Empréstimo pessoal online</h1>
+    </header>
+    <main>
+        <p><strong>Empréstimo</strong> de até <strong>R$ 2.500!</strong> <strong class="color">Simule já!</strong></p>
+        <form action="#" method="get">
+            <div>
+                <label for="iemail"></label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="Email" class="campo-email">
+            </div>
+            <div>
+                <input type="submit" value="Continuar" class="button">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

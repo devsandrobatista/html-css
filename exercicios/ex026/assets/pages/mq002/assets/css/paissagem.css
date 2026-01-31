@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+html, body {
+    background-image: url("../images/cev-landscape.jpg");
+    background-position: left bottom;
+}
+
+.modo.retrato {
+    display: none;
+}
+
+.modo.paisagem {
+    position: absolute;
+    left: 80%;
+}

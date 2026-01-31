@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints 
+    Mobile: até 480;
+    Extra small devices: de 481 até 767;
+    Small tablets: de 768 até 991;
+    Large tablets/laptops: de 992 até 1199;
+    EDesktops: de 1200 até 1919;
+    Extra large screens: 1920;
+*/
+
+@media screen and (min-width: 768px) {
+    #burguer {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu > .opcoes > .opcao {
+        display: inline-block;
+        margin-left: 2px;
+
+        transition-duration: .8s;
+    }
+
+    .menu > .opcoes > .opcao:first-child {
+        margin-left: 5px;
+    }
+
+    .menu > .opcoes > .opcao:hover {
+        transform: scale(1.1);
+    }
+
+    .menu > .opcoes > .opcao > a {
+        border-radius: 10px;
+        border: none;
+    }
+
+    .menu > .opcoes > .opcao > a:active {
+        color: #000;
+        border: 2px solid #fff;
+
+    }
+
+    main {
+        width: 768px;
+    }
+}

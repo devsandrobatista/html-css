@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout na prática</title>
+
+    <style>
+      /* R E S E T */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      /* S T Y L E S */
+      body {
+        background-color: #000;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 90vw;
+        height: 250px;
+        border: 3px solid #00f;
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        /* gap: 5px; */
+
+        /* O alinhamento dos itens alinha o conteúdo dentro das linhas de grade */
+        /* align-items: center; */ /* alinhar vertical */
+        /* justify-items: center; */ /* alinhar horizontal */
+
+        /* O alinhamento do conteúdo alinha o conteúdo dentro da grade */
+        /* align-content: space-evenly; */
+        /* justify-content: space-between; */
+      }
+
+      .item {
+        padding: 5px;
+        border: 3px dotted rgba(255, 0, 0, 0.218);
+
+        color: #fff;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item i1">A</div>
+      <div class="item i2">B</div>
+      <div class="item i3">C</div>
+      <div class="item i4">D</div>
+      <div class="item i5">E</div>
+      <div class="item i6">F</div>
+      <div class="item i7">G</div>
+      <!-- <div class="item i8">H</div>
+      <div class="item i9">J</div> -->
+    </div>
+  </body>
+</html>

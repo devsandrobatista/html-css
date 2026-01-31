@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 { 
+            text-align: center;
+            text-transform: uppercase;
+            color: #333;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            outline: 3px solid red;
+            outline-offset: 10px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: middle; /* Alinhamento Vertical */
+        }
+
+        table .numero {
+            text-align: right;
+        }
+    </style>
+</head> 
+<body>
+    <!-- 
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW (tr) = linha da tabela
+                TABLE HEADER (th) = cabeçalho da tabela
+                TABLE DATA (td) = célula de dados da tabela
+    -->
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr>   <!-- PRIMEIRA LINHA -->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr> 
+        <tr>   <!-- SEGUNDA LINHA -->
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr>   <!-- TERCEIRA LINHA -->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr>   <!-- QUARTA LINHA -->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+header {
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#burguer {
+  display: block;
+}
+
+#burguer:hover {
+  display: block;
+  background-color: #fff;
+  color: #000;
+}
+
+.header-title {
+  flex-basis: 50px;
+}
+
+.nav-list {
+  flex-flow: column nowrap;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  width: 85vw;
+}
+
+.nav-link:hover,
+.nav-link:visited {
+  transform: scale(1.05);
+}

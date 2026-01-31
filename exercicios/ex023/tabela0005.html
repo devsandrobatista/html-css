@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        table .style {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        table .center {
+            text-align: center;
+        }
+
+        table #cnome {
+            background-color: greenyellow;
+        }
+
+        table #cgroup {
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col id="cnome">
+            <col id="csexo">
+            <col id="cgroup" span="2">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th class="style" scope="col">Nome</th>
+                <th class="style" scope="col">Sexo</th>
+                <th class="style" scope="col">Idade</th>
+                <th class="style" scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="style">Ana Maria</td>
+                <td class="style center">F</td>
+                <td class="style center">25</td>
+                <td class="style">Jornalista</td>
+            </tr>
+            <tr>
+                <td class="style">Claudio</td>
+                <td class="style center">M</td>
+                <td class="style center">28</td>
+                <td class="style">Programador</td>
+            </tr>
+            <tr>
+                <td class="style">Gustavo</td>
+                <td class="style center">M</td>
+                <td class="style center">42</td>
+                <td class="style">Professor</td>
+            </tr>
+            <tr>
+                <td class="style">Sandro</td>
+                <td class="style center">M</td>
+                <td class="style center">23</td>
+                <td class="style">Dev Front-end</td>
+            </tr>
+            <tr>
+                <td class="style">Maria</td>
+                <td class="style center">F</td>
+                <td class="style center">39</td>
+                <td class="style">Médica</td>
+            </tr>
+            <tr>
+                <td class="style">Otávio</td>
+                <td class="style center">M</td>
+                <td class="style center">22</td>
+                <td class="style">Nutricionista</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

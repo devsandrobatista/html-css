@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu FlexBox</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/mobile.css"
+      media="screen and (max-width: 580px)"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body onresize="mudouTamanho()">
+    <header>
+      <h1 class="header-title">Meu Site</h1>
+      <span class="material-icons icon" id="burguer" onclick="clickMenu()"
+        >menu</span
+      >
+      <nav class="main-nav" id="items">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">Opção 1</a></li>
+          <li><a href="#" class="nav-link">Opção 2</a></li>
+          <li><a href="#" class="nav-link">Opção 3</a></li>
+          <li><a href="#" class="nav-link">Opção 4</a></li>
+          <li><a href="#" class="nav-link">Opção 5</a></li>
+          <li><a href="#" class="nav-link">Opção 6</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="heading-primary">Teste de Flexbox</h2>
+      <p class="text-paragraph">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga commodi,
+        itaque, amet architecto dicta assumenda nobis ut dolores, magnam
+        asperiores adipisci. Possimus voluptatem officia culpa distinctio
+        similique. Animi harum ipsam similique odio corrupti doloremque maiores
+        iste. Cumque sed minima molestiae ex voluptatum veniam similique
+        reiciendis perferendis laudantium molestias, assumenda at rem nisi iusto
+        velit maxime cupiditate doloribus eaque eum ut id! Facere nihil facilis
+        similique iste voluptas! Tenetur, magnam!
+      </p>
+      <p class="text-paragraph">
+        Molestias id aliquid nesciunt quis eius, dolorem non? Numquam, velit
+        est? Rem consectetur corrupti odio quod quibusdam laudantium illum
+        numquam, nisi amet asperiores cum voluptas alias ducimus aspernatur iste
+        optio accusamus consequatur sint, nam ipsa itaque deleniti, autem id?
+        Excepturi perspiciatis corrupti ipsum quisquam minus quo facilis, sint
+        veritatis est repellendus maxime obcaecati amet nulla iure reprehenderit
+        tempora repudiandae maiores enim modi sunt, commodi aut delectus!
+        Mollitia suscipit commodi numquam id? Eaque optio beatae totam pariatur
+        fugit, neque ab a nulla molestias!
+      </p>
+      <p class="text-paragraph">
+        Quo, eveniet quod? Eius debitis adipisci modi quasi minus quas culpa
+        deleniti architecto libero doloremque dolores at saepe exercitationem,
+        mollitia nemo obcaecati illum eaque minima ut. Expedita, qui? Nihil
+        porro dicta neque, optio odio culpa eos dolores velit commodi
+        accusantium recusandae nisi labore unde facilis provident numquam minima
+        cupiditate consectetur dignissimos. Enim, laboriosam numquam dolores
+        quisquam assumenda magni esse. Ducimus, similique. Libero asperiores
+        soluta nesciunt mollitia ea necessitatibus, aut ipsam quam repellendus
+        vel, velit labore cumque voluptatibus eveniet non laborum temporibus
+        dolores.
+      </p>
+    </main>
+
+    <script>
+      function clickMenu() {
+        if (items.style.display == "block") {
+          items.style.display = "none";
+        } else {
+          items.style.display = "block";
+        }
+      }
+
+      function mudouTamanho() {
+        if (window.innerWidth <= 580) {
+          items.style.display = "none";
+        } else {
+          items.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template: repeat(3, 100px) / repeat(4, 1fr);
+}
+
+.box {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  user-select: none;
+}
+
+.b1 {
+  background-color: aquamarine;
+
+  grid-area: 1 / 1 / 2 / 5;
+}
+
+.b2 {
+  background-color: coral;
+
+  grid-area: 2 / 1 / 4 / 3;
+}
+
+.b3 {
+  background-color: grey;
+
+  grid-area: 2 / 3 / 4 / 5;
+}

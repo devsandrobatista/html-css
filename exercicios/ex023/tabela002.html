@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Página 02</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        table caption {
+            background-color: lightgray;
+            border: 1px solid black;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 10px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            position: -webkit-sticky;
+            top: -1px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        table .border {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+
+        table .num {
+            text-align: right;
+        }
+
+        table th.border {
+            background-color: gray;
+            color: white;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: middle; /* Alinhamento Vertical */
+            text-transform: uppercase;
+        }
+
+        table .border:hover {
+            background-color: lightblue;
+        }
+
+        table th.num {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA DE TABELAS (grandes)
+        TABLE = tabela
+            CAPTION = título da tabela
+            THEAD = cabeçalho da tabela
+                TR = linha do cabeçalho
+                    TH = célula de cabeçalho
+                    TD = célula de dados
+            TBODY = corpo da tabela
+                TR = linha do corpo
+                    TH = célula de cabeçalho
+                    TD = célula de dados
+            TFOOT = rodapé da tabela
+                TR = linha do rodapé    
+                    TH = célula de cabeçalho
+                    TD = célula de dados
+    -->
+    <table>
+        <caption>Estados Brasileiros e suas Populações</caption>
+        <thead>
+            <tr>
+                <th scope="col" class="border">Estado</th>
+                <th scope="col" class="border num">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row" id="primeira">
+                <td class="border city">São Paulo</td>
+                <td class="border num">45 973 194</td>
+            </tr>
+            <tr class="row" id="segunda">
+                <td class="border city">Minas Gerais</td>
+                <td class="border num">21 322 691</td>
+            </tr>
+            <tr class="row" id="terceira">
+                <td class="border city">Rio de Janeiro</td>
+                <td class="border num">17 219 679</td>
+            </tr>
+            <tr class="row" id="quarta">
+                <td class="border city">Bahia</td>
+                <td class="border num">14 850 513</td>
+            </tr>
+            <tr class="row" id="quinta">
+                <td class="border city">Paraná</td>
+                <td class="border num">11 824 665</td>
+            </tr>
+            <tr class="row" id="sexta">
+                <td class="border city">Rio Grande do Sul</td>
+                <td class="border num">11 229 915</td>
+            </tr>
+            <tr class="row" id="setima">
+                <td class="border city">Pernambuco</td>
+                <td class="border num">9 539 021</td>
+            </tr>
+            <tr class="row" id="oitava">
+                <td class="border city">Ceará</td>
+                <td class="border num">9 233 656</td>
+            </tr>
+            <tr class="row" id="nona">
+                <td class="border city">Pará</td>
+                <td class="border num">8 664 306</td>
+            </tr>
+            <tr class="row" id="decima">
+                <td class="border city">Santa Catarina</td>
+                <td class="border num">8 058 441</td>
+            </tr>
+            <tr class="row" id="decima-primeira">
+                <td class="border city">Goiás</td>
+                <td class="border num">7 350 483</td>
+            </tr>
+            <tr class="row" id="decima-segunda">
+                <td class="border city">Maranhão</td>
+                <td class="border num">7 010 960</td>
+            </tr>
+            <tr class="row" id="decima-terceira">
+                <td class="border city">Amazonas</td>
+                <td class="border num">4 281 209</td>
+            </tr>
+            <tr class="row" id="decima-quarta">
+                <td class="border city">Paraiba</td>
+                <td class="border num">4 145 040</td>
+            </tr>
+            <tr class="row" id="decima-quinta">
+                <td class="border city">Espírito Santo</td>
+                <td class="border num">4 102 129</td>
+            </tr>
+            <tr class="row" id="decima-sexta">
+                <td class="border city">Mato Grosso</td>
+                <td class="border num">3 836 399</td>
+            </tr>
+            <tr class="row" id="decima-setima">
+                <td class="border city">Rio Grande do Norte</td>
+                <td class="border num">3 446 071</td>
+            </tr>
+            <tr class="row" id="decima-oitava">
+                <td class="border city">Piauí</td>
+                <td class="border num">3 375 646</td>
+            </tr>
+            <tr class="row" id="decima-nona">
+                <td class="border city">Alagoas</td>
+                <td class="border num">3 220 104</td>
+            </tr>
+            <tr class="row" id="vigésima">
+                <td class="border city">Distrito Federal</td>
+                <td class="border num">3 982 818</td>
+            </tr>
+            <tr class="row" id="vigésima-primeira">
+                <td class="border city">Mato Grosso do Sul</td>
+                <td class="border num">2 901 895</td>
+            </tr>
+            <tr class="row" id="vigésima-segunda">
+                <td class="border city">Sergipe</td>
+                <td class="border num">2 291 077</td>
+            </tr>
+            <tr class="row" id="vigésima-terceira">
+                <td class="border city">Rondônia</td>
+                <td class="border num">1 746 227</td>
+            </tr>
+            <tr class="row" id="vigésima-quarta">
+                <td class="border city">Tocantins</td>
+                <td class="border num">1 577 342</td>
+            </tr>
+            <tr class="row" id="vigésima-quinta">
+                <td class="border city">Acre</td>
+                <td class="border num">880 631</td>
+            </tr>
+            <tr class="row" id="vigésima-sexta">
+                <td class="border city">Amapá</td>
+                <td class="border num">802 837</td>
+            </tr>
+            <tr class="row" id="vigésima-sétima">
+                <td class="border city">Roraima</td>
+                <td class="border num">716 793</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" class="border">Total de Habitantes</th>
+                <td class="border num"><strong>212 583 750</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

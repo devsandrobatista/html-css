@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    background-image: url("../images/cev-portrait.jpg");
+    background-position: center bottom;
+}
+
+.modo.retrato {
+    position: absolute;
+    left: 72%;
+}
+
+.modo.paisagem {
+    display: none;
+}
