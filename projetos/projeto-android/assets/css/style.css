@@ -8,12 +8,6 @@
   font-weight: normal;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   /* colors */
   --cor0: #c5ebd6;
@@ -232,20 +226,4 @@ footer p > a {
 footer p > a:hover {
   color: var(--cor1);
   text-decoration: underline;
-}
-
-@media (min-width: 320px) and (max-width: 481px) {
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-
-  .menu {
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
-  .menu li {
-    text-align: center;
-  }
 }
