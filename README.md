@@ -1,9 +1,9 @@
 # 📘 HTML & CSS — [CursoemVídeo](https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/)
 
+![Status](https://img.shields.io/badge/Status-Em%20Estudo-16a34a?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 [![Curso em Vídeo](https://img.shields.io/badge/Curso-Curso%20em%20Vídeo-111827?style=for-the-badge)](https://www.youtube.com/@cursoemvideo)
-![Status](https://img.shields.io/badge/Status-Em%20Estudo-16a34a?style=for-the-badge)
 [![Professor](https://img.shields.io/badge/Professor-Gustavo%20Guanabara-1f2937?style=for-the-badge)](https://github.com/gustavoguanabara)
 
 ---
